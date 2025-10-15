@@ -1,0 +1,11 @@
+[Unit]
+Description=My super puper Nginx Server
+After=network.target
+
+[Service]
+ExecStart=/usr/sbin/nginx -g 'daemon off;'
+ExecReload=/bin/kill HUP $MAINPID
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

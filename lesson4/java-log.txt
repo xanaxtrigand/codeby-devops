@@ -1,0 +1,26 @@
+Script started on 2025-10-15 23:46:14+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="150" LINES="39"]
+[?2004h]0;parallels@devopsVM: ~/codeby-devops[01;32mparallels@devopsVM[00m:[01;34m~/codeby-devops[00m$ java -version
+[?2004lopenjdk version "11.0.28" 2025-07-15
+OpenJDK Runtime Environment (build 11.0.28+6-post-Ubuntu-1ubuntu124.04.1)
+OpenJDK 64-Bit Server VM (build 11.0.28+6-post-Ubuntu-1ubuntu124.04.1, mixed mode)
+[?2004h]0;parallels@devopsVM: ~/codeby-devops[01;32mparallels@devopsVM[00m:[01;34m~/codeby-devops[00m$ sudo update-alternatives --config java
+[?2004l[sudo] password for parallels: 
+There are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                         Priority   Status
+------------------------------------------------------------
+  0            /opt/jdk-25/bin/java                          1717      auto mode
+  1            /opt/jdk-25/bin/java                          1717      manual mode
+* 2            /usr/lib/jvm/java-11-openjdk-arm64/bin/java   1111      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+update-alternatives: using /opt/jdk-25/bin/java to provide /usr/bin/java (java) in manual mode
+[?2004h]0;parallels@devopsVM: ~/codeby-devops[01;32mparallels@devopsVM[00m:[01;34m~/codeby-devops[00m$ java -version
+[?2004lJava HotSpot(TM) 64-Bit Server VM warning: Unable to get SVE vector length on this system. Disabling SVE. Specify -XX:UseSVE=0 to shun this warning.
+java version "25" 2025-09-16 LTS
+Java(TM) SE Runtime Environment (build 25+37-LTS-3491)
+Java HotSpot(TM) 64-Bit Server VM (build 25+37-LTS-3491, mixed mode, sharing)
+[?2004h]0;parallels@devopsVM: ~/codeby-devops[01;32mparallels@devopsVM[00m:[01;34m~/codeby-devops[00m$ exit
+[?2004lexit
+
+Script done on 2025-10-15 23:46:43+03:00 [COMMAND_EXIT_CODE="0"]
