@@ -1,0 +1,48 @@
+Script started on 2025-10-16 00:13:08+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="150" LINES="37"]
+[?2004h]0;parallels@devopsVM: ~[01;32mparallels@devopsVM[00m:[01;34m~[00m$ sudo systemctl daemon-reload 
+[?2004l[sudo] password for parallels: 
+[?2004h]0;parallels@devopsVM: ~[01;32mparallels@devopsVM[00m:[01;34m~[00m$ sudo systemctl enable supernginx.service 
+[?2004lCreated symlink /etc/systemd/system/multi-user.target.wants/supernginx.service → /etc/systemd/system/supernginx.service.
+[?2004h]0;parallels@devopsVM: ~[01;32mparallels@devopsVM[00m:[01;34m~[00m$ sudo systemctl start supernginx.service 
+[?2004l[?2004h]0;parallels@devopsVM: ~[01;32mparallels@devopsVM[00m:[01;34m~[00m$ sudo systemctl statu supers super[C[C[C[C[C[Cnginx.service 
+[?2004l[?1h=[0;1;32m●[0m supernginx.service - My super puper Nginx Server[m
+     Loaded: loaded (]8;;file://devopsVM/etc/systemd/system/supernginx.service/etc/systemd/system/supernginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Thu 2025-10-16 00:13:42 MSK; 12s ago[m
+   Main PID: 59342 (nginx)[m
+      Tasks: 3 (limit: 2206)[m
+     Memory: 2.3M (peak: 2.3M)[m
+        CPU: 3ms[m
+     CGroup: /system.slice/supernginx.service[m
+             ├─[0;38;5;245m59342 "nginx: master process /usr/sbin/nginx -g daemon off;"[0m[m
+             ├─[0;38;5;245m59343 "nginx: worker process"[0m[m
+             └─[0;38;5;245m59344 "nginx: worker process"[0m[m
+[m
+Oct 16 00:13:42 devopsVM systemd[1]: Started supernginx.service - My super puper Nginx Server.[m
+[K[?1l>[?2004h]0;parallels@devopsVM: ~[01;32mparallels@devopsVM[00m:[01;34m~[00m$ curl httpL[K://localhost
+[?2004l<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+[?2004h]0;parallels@devopsVM: ~[01;32mparallels@devopsVM[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2025-10-16 00:14:09+03:00 [COMMAND_EXIT_CODE="0"]
